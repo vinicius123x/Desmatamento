@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmtamento</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('nova_imagem.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .header {
+            background-image: url('imgdofunto.webp');
+            background-size: auto;
+            text-align: center;
+            padding: 60px;
+            height: 100px;
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            color: #ffffff;
+            width: 80% auto;
+            size: center;
+            background-position: center;
+        }
+        h1, h2 {
+            margin: 20px 0;
+            text-align: center;
+        }
+        p {
+            margin: 20px 0;
+        }
+        .menu {
+            background-color: #0084ff;
+            color: rgb(131, 26, 26);
+            padding: 3px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            background-position: center;
+            margin: 10px;
+            font-size: 16px;
+            height: auto;
+            .b1, .b2, .b3 {
+                background-color: #0084ff;
+                color: white;
+                padding: 4px 11px;
+                border: none;
+                border-radius: 4px;
+            }  
+            .b1:hover, .b2:hover, .b3:hover {
+                background-color: #0000005e;
+                font-size: 18px;
+                transition: background-color 0.3s ease, font-size 0.3s ease;
+            }
+        }
+        .content {
+            width: 600px;
+
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.829);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tabela {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.829);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .login {
+            background-color: rgba(255, 255, 255, 0.829);
+            border-radius: 8px;
+            padding: 20px;
+            width: 597px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .perguntas {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.829);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            background-color: #ffffff94;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #353434;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        
+        input[type="submit"],
+        input[type="reset"],
+        button {
+            background-color: #0084ff;
+            color: white;
+            padding:7px 11px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #008cffe3;
+            padding: 1px;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            color: #000000;
+            font-family: 'Lora', serif;
+            font-size: 16px;    
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="8989449.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <h1>Desmatamento</h1>
+    </div>   
+    <div class="menu">
+            <a href="#conteudo" class="b1" style="color: white; text-decoration: none; margin: 0 15px;">Conteudo</a>
+            <a href="#Atividade" class="b2" style="color: white; text-decoration: none; margin: 0 15px;">Atividade</a>
+            <a href="#login" class="b3" style="color: white; text-decoration: none; margin: 0 15px;">Login</a>
+    </div>
+    
+    <div class="content" id="conteudo">
+        <h2>O que é desmatamento no Brasil?</h2>
+        <p>O desmatamento no Brasil teve uma queda de 32,4% em 2024, com reduções em todos os biomas, exceto na Mata Atlântica, que se manteve estável, segundo o MapBiomas. O Cerrado foi o bioma mais desmatado em 2024, apesar da redução de 41,2% em relação a 2023, segundo a CNN Brasil. A Amazônia também registrou queda, mas ainda assim perdeu 377.708 hectares, segundo a CNN Brasil. </p>
+    </div>
+    <div class="tabela" id="tabela">
+        <h2>Dados do Desmatamento</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <th>Bioma</th>
+                <th>Área Desmatada (hectares)</th>
+                <th>Variação 2023-2024 (%)</th>
+            </tr>
+            <tr>
+                <td>Amazônia</td>
+                <td>377.708</td>
+                <td>-32,4%</td>
+            </tr>
+            <tr>
+                <td>Cerrado</td>
+                <td>1.200.000</td>
+                <td>-41,2%</td>
+            </tr>
+            <tr>
+                <td>Mata Atlântica</td>
+                <td>Estável</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+    </div>
+    <div class="perguntas" id="Atividade">
+        <h2 style="padding: 10px;;">Atividade de Pesquisa</h2>
+        <div class="pesquisa">
+            <p>Pesquise sobre o impacto do desmatamento na biodiversidade e escreva um pequeno resumo sobre suas descobertas.</p>
+            <textarea rows="5" cols="72" placeholder="Escreva seu resumo aqui..."></textarea>
+        </div>
+        <br>
+        <form>
+            <p style="margin: 10px;"><strong>1. O que é desmatamento?</strong></p>
+            <label for="resposta1"></label>
+            <textarea id="resposta1" rows="2" cols="72" placeholder="Digite sua resposta aqui..."></textarea>
+            
+            <p style="margin: 10px;"><strong>2. Quais são os principais biomas afetados pelo desmatamento no Brasil?</strong></p>
+             <label for="resposta1"></label>
+            <textarea id="resposta1" rows="2" cols="72" placeholder="Digite sua resposta aqui..."></textarea>
+            
+            <p style="margin: 10px;"><strong>3. Como posso ajudar a combater o desmatamento?</strong></p>
+            <label for="resposta1"></label>
+            <textarea id="resposta1" rows="2" cols="72" placeholder="Digite sua resposta aqui..."></textarea>
+            
+            <p style="margin: 10px;"><strong>4. Quais são as consequências do desmatamento para o meio ambiente?</strong></p>
+            <label for="resposta1"></label>
+            <textarea id="resposta1" rows="2" cols="72" placeholder="Digite sua resposta aqui..."></textarea>
+
+            <p style="margin: 10px;"><strong>5. O que é a Lei da Mata Atlântica?</strong></p>
+            <label for="resposta1"></label>
+            <textarea id="resposta1" rows="2" cols="72" placeholder="Digite sua resposta aqui..."></textarea>
+
+            <h2>Quiz</h2>
+            
+            <p style="margin: 10px;"><strong>1. Quais são as atividades que podem provocar o desmatamento? </strong></p>
+            <label for="resposta1"></label>
+            <input type="checkbox" id="atividade1" name="atividade1" value="Agricultura">
+            <label for="atividade1">Oq pode provocar o desmatamento, é quando a pessoa joga lixo no lixo, e mantém a rua limpa, e cuida do planeta.</label><br>
+            <br>
+            <input type="checkbox" id="atividade2" name="atividade2" value="Pecuária">
+            <label for="atividade2">Alguns exemplos são expansão da atividade agrícola, atividade mineradora, alimento da exploração dos recursos naturais pela procura por matéria-prima, intensa urbanisação e aumento das queimadas, acidentais ou intencionais entre outros.</label><br>
+    
+            <br>
+            <p style="margin: 10px;"><strong>2. Quais as consequências do desmatamento? </strong></p>
+            <label for="resposta1"></label>
+            <input type="checkbox" id="atividade1" name="atividade1" value="Agricultura">
+            <label for="atividade1">A perda da biodiversidade com extinção de espécies, impactos negativos como as mudanças climáticas.</label><br>
+            <br>
+            <input type="checkbox" id="atividade2" name="atividade2" value="Pecuária">
+            <label for="atividade2">Podemos respirar melhor, já que tem Menas árvores.</label><br>
+
+            <br>
+            <p style="margin: 10px;"><strong>3. O desmatamento é um fenômeno apenas no Brasil? </strong></p>
+            <label for="resposta1"></label>
+            <input type="checkbox" id="ativiwdade1" name="ativwidade1" value="Agricultura">
+            <label for="ativiwdade1">Sim, presente apenas no Brasil.</label><br>
+            <br>
+            <input type="checkbox" id="a2" name="a2" value="a2">
+            <label for="a2">Não, mais a maior ocorrência de desmate está nos países subdesenvolvidos e emergentes.</label><br>
+
+            <br>
+            <p style="margin: 10px;"><strong>4. O que levou o processo de desmatamento? </strong></p>
+            <label for="resposta1"></label>
+            <input type="checkbox" id="ativiwdade1" name="ativwidade1" value="Agricultura">
+            <label for="ativiwdade1">As pessoas queriam viver no mundo melhor e por isso fizeram o desmatamento.</label><br>
+            <br>
+            <input type="checkbox" id="a2" name="a2" value="a2">
+            <label for="a2">Foi iniciado mediante a necessidade de matéria-prima para produção de deferente elementos de uso da sociedade.</label><br>
+
+            <br>
+            <p style="margin: 10px;"><strong>5. Quais práticas ilegais contribuiram para a degradação na Amazônia? </strong></p>
+            <label for="resposta1"></label>
+            <input type="checkbox" id="ativiwdade1" name="ativwidade1" value="Agricultura">
+            <label for="ativiwdade1">Construção de casas e prédios.</label><br>
+            <br>
+            <input type="checkbox" id="a2" name="a2" value="a2">
+            <label for="a2">Garimpagem, agropastoreio, biopirataria, queimadas e desmatamento.</label><br>
+        </form>
+        <br>
+        <div style="text-align: center;">
+             <h2>Documento</h2>
+             <label for="Aquivo">Agora faça um documento em pdf falando as principais consequências e no final solusois pra esses prolemas.</label>
+             <br><br>
+             <input type="file" id="button" name="Aquivo" accept=".pdf">
+        </div>
+    </div>
+    <div class="login" id="login">
+        <h2>Login pra Enviar Atividade</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" size="30" id="nome" name="nome" required>
+            <br><br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" size="30" id="email" name="email" required>
+            <br><br>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" size="30" id="senha" name="senha" required>
+            <input type="checkbox" id="mostrarSenha" onclick="toggleSenha()">
+            <label for="mostrarSenha" style="font-size: 14px;">Mostrar senha</label>
+            <script>
+            function toggleSenha() {
+                var senhaInput = document.getElementById('senha');
+                if (senhaInput.type === 'password') {
+                    senhaInput.type = 'text';
+                } else {
+                    senhaInput.type = 'password';
+                }
+            }
+            </script>
+            <br><br>
+            
+            <label for="Avaliação">Avalie nosso Site:</label>
+             <select id="Avaliação" name="Avaliação[]" >
+                <option value="segunda">Excelente</option>
+                <option value="terca">Bom</option>
+                <option value="quarta">Pode Melhorar</option>
+                <option value="quinta">Esta Mais ou Menos</option>
+                <option value="sexta">Esta horrível</option>
+            </select>
+            <br><br>
+            <label for="data">Data da refeição:</label>
+            <input type="date" id="data" name="data">
+            <br><br>
+            <button type="submit">Enviar as Resposta</button>
+            <button type="reset">Limpar</button>
+            
+        </form>
+    </div>
+    <footer>
+        <p style="text-align: center; color: #ffffff;">&copy; 2025 Vincius de Araujo Dantas</p>
+    </footer> 
+</body>
+</html>
